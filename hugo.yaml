@@ -43,7 +43,7 @@ params:
     keywords: [Blog, Portfolio ]
     #images: ["<link or path of image for opengraph, twitter-cards>"]
     DateFormat: "January 2, 2006"
-    defaultTheme: light
+    defaultTheme: dark
     disableAnchoredHeadings: false
     disableThemeToggle: false
     ShowReadingTime: true
