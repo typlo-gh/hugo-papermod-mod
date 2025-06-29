@@ -15,7 +15,7 @@
 }
 
 .post-content a {
-    color: #74b9ff;
+    color: #369aff;
 }
 
 mark {
@@ -26,5 +26,13 @@ mark {
     background-image: linear-gradient(to right, rgba(255, 225, 0, .1), rgba(255, 225, 0, .7) 4%, rgba(255, 225, 0, .3));
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
+}
+
+.post-content code {
+    color: #fc3030;
+}
+
+.post-content a:hover{
+    color: #026edb;
 }
 
