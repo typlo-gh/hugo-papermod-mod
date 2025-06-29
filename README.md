@@ -11,7 +11,11 @@ The `hugo.yaml` file has been configured to set various site-wide parameters.
 The `assets/` directory contains custom CSS to override the theme's default styles.
 
 -   **`assets/css/extended/theme-vars.css`**:
-    -   Sets the `--main-width` to `900px`.
+    -   Sets the main container width to `900px`.
+    -   Defines a custom color palette for dark mode, overriding the default theme colors.
+    -   Styles hyperlinks with a custom color and a hover effect.
+    -   Adds a custom background style for highlighted text using `<mark>` tags.
+    -   Sets a custom color for inline code snippets.
 
 ## `layouts/`
 
