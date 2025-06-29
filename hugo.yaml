@@ -64,6 +64,8 @@ params:
     ShowRssButtonInSectionTermList: true
     ShowAllPagesInArchive: true
     ShowPageNums: true
+    cover:
+      hiddenInList: true # hide on list pages and home
 
     assets:
         # disableFingerprinting: true
