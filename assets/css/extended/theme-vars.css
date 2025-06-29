@@ -14,3 +14,17 @@
     --border: rgb(51, 51, 51);
 }
 
+.post-content a {
+    color: #74b9ff;
+}
+
+mark {
+    margin: 0 -.4em;
+    padding: 0 .4em;
+    border-radius: .8em .3em;
+    background: 0 0;
+    background-image: linear-gradient(to right, rgba(255, 225, 0, .1), rgba(255, 225, 0, .7) 4%, rgba(255, 225, 0, .3));
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
