@@ -41,7 +41,7 @@ params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     description: "Personal blog of ..."
     keywords: [Blog, Portfolio ]
-    #images: ["<link or path of image for opengraph, twitter-cards>"]
+    images: ["<link or path of image for opengraph, twitter-cards>"]
     DateFormat: "January 2, 2006"
     defaultTheme: dark
     disableAnchoredHeadings: false
@@ -79,7 +79,7 @@ params:
       #iconHeight: 35
     # home-info mode
     homeInfoParams:
-        Title: "Hi there \U0001F44B"
+        Title: "Hi there <span class='wave'>👋🏻</span>"
         Content: |
             Welcome to my Blog!
     socialIcons:
@@ -102,13 +102,6 @@ menu:
         #   name: About
         #   url: /about/
         #   weight: 3
-        - identifier: posts
-          name: Blog
-          url: /posts/
-          params:
-            pagination:
-              pagerSize: 5
-          weight: 2
         - identifier: archives
           name: Archives
           url: /archives/
