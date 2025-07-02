@@ -29,3 +29,8 @@ The `layouts/` directory contains custom layouts and shortcodes to override the 
 
 -   **`layouts/partials/extend_head.html`**:
     -   This file can be used to add custom HTML to the `<head>` section of the site, such as Google Analytics scripts.
+
+-   **`layouts/shortcodes/gallery.html`**:
+    -   This shortcode creates a responsive image gallery from a specified directory.
+    -   To use it, create a folder (e.g., `gallery/`) inside the `content/` directory and add your images.
+    -   In your Markdown file, use the shortcode `{{< gallery dir="gallery/" >}}` to display the images.
