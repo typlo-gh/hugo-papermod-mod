@@ -1,0 +1,20 @@
+<div class="gallery-shortcode">
+    {{/* Get the directory path from the 'dir' parameter. Defaults to "images/" if not provided. */}}
+    {{ $path := .Get "dir" | default "images/" }}
+
+    {{/* Find all resources matching the path pattern (e.g., "images/*") */}}
+    {{ $resources := .Page.Resources.Match (printf "%s*" $path) }}
+
+    {{/* Loop through the found resources */}}
+    {{ range $resources }}
+        {{/* Check if the resource is an image */}}
+        {{ if eq .ResourceType "image" }}
+            <input id="gallery" hidden disabled>
+            <label for="gallery">
+                <a href="{{ .RelPermalink }}" target="_blank" title="{{ .Title }}">
+                    <img class="gallery" loading="lazy" decoding="async" src="{{ .RelPermalink }}" alt="{{ .Title | default .Name }}" />
+                </a>
+            </label>
+        {{ end }}
+    {{ end }}
+</div>

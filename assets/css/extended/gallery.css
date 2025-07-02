@@ -1,0 +1,24 @@
+.gallery-shortcode {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.gallery-shortcode p {
+    margin: 0;
+}
+
+.gallery-shortcode img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.gallery-shortcode img:hover {
+    transform: scale(1.2);
+}
