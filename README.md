@@ -1,10 +1,15 @@
-# Hugo PaperMod Theme Customizations
+"""# Hugo PaperMod Theme Customizations
 
 This repository contains a customized setup of the Hugo PaperMod theme. The following files have been modified or added to override the default theme behavior.
 
 ## `hugo.yaml`
 
 The `hugo.yaml` file has been configured to set various site-wide parameters.
+
+-   **`homeInfoParams`**:
+    -   Includes a welcoming title with a waving hand animation: `"Hi there <span class='wave'>👋🏻</span>"`.
+-   **`cover`**:
+    -   The `hiddenInList` option is set to `true` to hide the cover image on list pages and the homepage.
 
 ## `assets/`
 
@@ -16,6 +21,7 @@ The `assets/` directory contains custom CSS to override the theme's default styl
     -   Styles hyperlinks with a custom color and a hover effect.
     -   Adds a custom background style for highlighted text using `<mark>` tags.
     -   Sets a custom color for inline code snippets.
+    -   Includes a `wave-animation` for the waving hand emoji in the site's title.
 
 ## `layouts/`
 
@@ -34,3 +40,4 @@ The `layouts/` directory contains custom layouts and shortcodes to override the 
     -   This shortcode creates a responsive image gallery from a specified directory.
     -   To use it, create a folder (e.g., `gallery/`) inside the `content/` directory and add your images.
     -   In your Markdown file, use the shortcode `{{< gallery dir="gallery/" >}}` to display the images.
+""
