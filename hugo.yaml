@@ -115,3 +115,7 @@ services:
     disableInlineCSS: true
   x:
     disableInlineCSS: true
+
+privacy:
+  youTube:
+    privacyEnhanced: true
