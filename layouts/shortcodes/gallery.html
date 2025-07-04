@@ -6,13 +6,15 @@
     {{ $resources := .Page.Resources.Match (printf "%s*" $path) }}
 
     {{/* Loop through the found resources */}}
-    {{ range $resources }}
+    {{ range $element := $resources }}
         {{/* Check if the resource is an image */}}
-        {{ if eq .ResourceType "image" }}
+        {{ if eq $element.ResourceType "image" }}
+            {{/* Generate a thumbnail of 400px height */}}
+            {{ $thumbnail := $element.Resize "x400" }}
             <input id="gallery" hidden disabled>
             <label for="gallery">
-                <a href="{{ .RelPermalink }}" target="_blank" title="{{ .Title }}">
-                    <img class="gallery" loading="lazy" decoding="async" src="{{ .RelPermalink }}" alt="{{ .Title | default .Name }}" />
+                <a href="{{ $element.RelPermalink }}" target="_blank" title="{{ $element.Title }}">
+                    <img class="gallery" loading="lazy" decoding="async" src="{{ $thumbnail.RelPermalink }}" alt="{{ $element.Title | default $element.Name }}"/>
                 </a>
             </label>
         {{ end }}
